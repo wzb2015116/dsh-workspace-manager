@@ -1,0 +1,6 @@
+- insert:
+    - id: workspace-manager
+      name: '@local/dsh-workspace-manager'
+      config:
+        defaultRoot: 'D:\harness work'
+        workspacesDirName: workspaces

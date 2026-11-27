@@ -1,0 +1,23 @@
+# 依赖
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+
+# 运行期产物（插件在本机生成，绝不入库）
+.dsh-workspaces/
+workspaces/
+
+# 日志与临时文件
+*.log
+*.tmp
+_errors.log
+_trace.log
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 内部开发台账（含本机绝对路径，不对外）
+progress.md
