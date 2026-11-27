@@ -21,4 +21,4 @@ jobs:
       - name: Syntax check
         run: node --check src/index.js && node --check src/core.js
       - name: Unit tests
-        run: node --test "tests/*.test.mjs"
+        run: node --test

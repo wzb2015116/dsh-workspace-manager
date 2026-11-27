@@ -96,12 +96,14 @@ cordis.patch.yml bundle patch
 
 ```bash
 node --check src/index.js
-node --test "tests/*.test.mjs"
+node --test
 # 或
 npm test
 ```
 
-要求 Node ≥ 20（使用内置 `node:test`，无外部依赖）。
+`node --test` 会自动发现 `tests/*.test.mjs`（Node 20+）。**不要写成 `node --test "tests/*.test.mjs"`** —— 该 glob 由 shell 展开，在部分 shell / CI 下会把字面量当模块路径传给 node 而报 `Cannot find module`。
+
+要求 Node ≥ 20（使用内置 `node:test`，无外部依赖）。CI 覆盖 Node 20 / 22 / 24。
 
 ### 两个必须遵守的坑
 
